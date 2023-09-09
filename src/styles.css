@@ -1,0 +1,53 @@
+body,
+html {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 100;
+  color: black;
+  background: white;
+  --minFontSize: 16px;
+  --maxFontSize: 24px;
+  --scaler: 10vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#world {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.title {
+  position: fixed;
+  top: 4%;
+  left: 4%;
+}
+
+.url {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
